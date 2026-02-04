@@ -1,0 +1,93 @@
+.home-container {
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-container h2 {
+  color: #667eea;
+  font-size: 28px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  color: #667eea;
+  padding: 40px;
+}
+
+.no-data {
+  text-align: center;
+  font-size: 18px;
+  color: #999;
+  padding: 40px;
+}
+
+.bus-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.bus-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.bus-table th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.bus-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.bus-table tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+.bus-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.bus-table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.bus-image {
+  max-width: 80px;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.bus-image-placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    padding: 15px;
+  }
+
+  .bus-table {
+    font-size: 12px;
+  }
+
+  .bus-table th,
+  .bus-table td {
+    padding: 8px;
+  }
+
+  .bus-image {
+    max-width: 60px;
+  }
+}
